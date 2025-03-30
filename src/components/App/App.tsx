@@ -1,9 +1,10 @@
 import React, { Suspense } from "react";
 import { RecoilRoot } from "recoil";
 import LoadingIndicator from "../LoadingIndicator";
-import { Router } from "react-router";
+import AppRoutes from "../AppRoutes";
 
-// Not sure if I really need to have the suspense & fallback here but
+// Not sure if I really need to have the suspense & fallback here
+// since the app should be fairly fast, but
 // I think it's a good habit to have as components are being loaded.
 
 // Also using react-router-dom for routing.
@@ -13,7 +14,7 @@ const App: React.FC = (): React.ReactElement => {
   return (
     <Suspense fallback={<LoadingIndicator />}>
       <RecoilRoot>
-        <Router>{/* <Routes /> */}</Router>
+        <AppRoutes />
       </RecoilRoot>
     </Suspense>
   );

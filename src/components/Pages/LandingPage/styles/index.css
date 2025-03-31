@@ -1,0 +1,51 @@
+.landing-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+
+ol {
+  padding-left: 0px;
+}
+
+.review {
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    h1 {
+      margin-right: 20px;
+    }
+  }
+
+  .review {
+    width: 90%;
+  }
+}

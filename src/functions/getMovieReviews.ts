@@ -26,14 +26,13 @@ const getMovieReviews = async (
         })
       );
 
-      console.log("Movie reviews:", movieReviews);
       setNYTMovieReviews(movieReviews);
     }
 
     return data;
   } catch (error) {
     console.error("Error fetching movie reviews:", error);
-    return {
+    throw {
       status: "error",
       message: "Failed to fetch movie reviews",
     };

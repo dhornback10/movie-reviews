@@ -7,7 +7,7 @@ import { TailSpin } from "react-loader-spinner";
 
 const LoadingIndicator: React.FC = (): React.ReactElement => {
   return (
-    <div className="loading-indicator">
+    <div className="loading-indicator" data-testid="loading-indicator">
       <TailSpin
         height="200"
         width="200"

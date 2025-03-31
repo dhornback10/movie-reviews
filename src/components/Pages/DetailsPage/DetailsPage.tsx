@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { useSelectedMovieReview } from "../../../hooks";
 import { useNavigate } from "react-router";
 
+import "./styles";
+
 const DetailsPage: React.FC = (): React.ReactElement => {
   const selectedReview = useSelectedMovieReview();
   const navigate = useNavigate();
@@ -15,7 +17,7 @@ const DetailsPage: React.FC = (): React.ReactElement => {
   }, [selectedReview]);
 
   return (
-    <div>
+    <div className="details-page-container">
       <header>
         <h2>Review Details</h2>
       </header>

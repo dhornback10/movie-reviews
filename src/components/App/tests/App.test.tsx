@@ -3,7 +3,7 @@ import React from "react";
 import App from "../App";
 
 describe("App Component", () => {
-  it("renders the app", () => {
+  it("displays the title when rendered", () => {
     render(<App />);
     const title = screen.getByText("NYT Movie Reviews");
     expect(title).toBeInTheDocument();

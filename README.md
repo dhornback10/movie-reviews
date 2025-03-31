@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+### `MUST INCLUDE API KEY ON LINE 9 OF getMovieReviews.ts as a string`
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
